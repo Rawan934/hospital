@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="anchor-pane1" stylesheets="@rawan.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Scene6Controller">
+   <children>
+      <!-- Header Text -->
+      <Text layoutX="25.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show Billing" wrappingWidth="152.51760864257812">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+
+      <!-- Pane for Design -->
+      <Pane layoutX="38.0" layoutY="144.0" prefHeight="272.0" prefWidth="270.0" styleClass="anchor-pane6" stylesheets="@rawan.css" />
+
+      <!-- Text Field for Patient ID -->
+      <TextField fx:id="billingLabel"
+                 layoutX="422.0"
+                 layoutY="200.0"
+                 prefHeight="29.0"
+                 prefWidth="270.0"
+                 promptText="Enter Patient ID" />
+
+      <!-- Label for Displaying Payment History -->
+      <Label fx:id="paymentHistoryLabel"
+             layoutX="422.0"
+             layoutY="250.0"
+             prefHeight="100.0"
+             prefWidth="270.0"
+             text="Payment history will appear here."
+             wrapText="true"
+             style="-fx-border-color: lightgray; -fx-padding: 10;" />
+
+      <!-- Button to Fetch Payment History -->
+      <Button fx:id="paymenthistory"
+              layoutX="468.0"
+              layoutY="370.0"
+              mnemonicParsing="false"
+              prefHeight="29.0"
+              prefWidth="178.0"
+              styleClass="label-Manage"
+              text="Payment History"
+              onAction="#handlePaymentHistory" />
+
+      <!-- Back Button -->
+      <Button layoutX="14.0"
+              layoutY="521.0"
+              mnemonicParsing="false"
+              onAction="#handleBackToPreviousScene"
+              prefHeight="30.0"
+              prefWidth="49.0"
+              styleClass="button-Login"
+              text="Back" />
+   </children>
+</AnchorPane>
